@@ -13,7 +13,7 @@ console.log(cityID=ID.value)
     const list = document.createElement("ul");
     document.querySelector('.meteo').appendChild(list);
 console.log(json.weather);
-        var item=document.createElement('li');
+        var item = document.createElement('li');
         list.appendChild(item);
         console.log(json)
 
