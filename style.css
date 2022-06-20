@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*image de fond */
+    background: url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1944&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    /*police*/
+    font-family: 'Poppins', sans-serif;
+}
+.bloc{
+    padding: 20px 70px;
+    color: white;
+}
+.principale{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.date{
+    font-weight: 100;
+}
+.date .time{
+    font-size: 70px;
+    font-weight: 100;
+}
+.date #heure {
+    font-size: 30px;
+    margin-left: 20px;
+}
+.date .jour{
+    font-size: 30px;
+}
+.place{
+    text-align: end;
+
+}
+.place .timezone{
+    font-size: 30px;
+    font-weight: 100;
+}
+.place .pays{
+    font-size: 12px;
+    font-weight: 700;
+}
+.principale .info{
+    display: flex;
+    flex-direction: column;
+    background:rgb(24, 24, 27,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 1px solid white;
+}
+.principale .info .weather-info{
+    display: flex;
+    justify-content: space-between;
+}
+.futur-days{
+    background: rgb(24, 24, 27,0.6);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.futur-days .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.futur-days .today .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+.futur-days .today .temp{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.futur-days .meteo-futur{
+    display: flex;
+}
+.meteo-futur .meteo-futur-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.meteo-futur .meteo-futur-info .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+.meteo-futur .meteo-futur-info .temp{
+    font-weight: 100;
+}
+/*media query pour permettre le scroll*/
+@media only screen and (max-width:730px){
+    .futur-days{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+    .bloc{
+        padding:20px;
+    }
+}
+
+@media only screen and(max-width:1000px){
+    .body{
+        overflow-x:scroll;
+    }
+    .futur-days{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+    
+}
