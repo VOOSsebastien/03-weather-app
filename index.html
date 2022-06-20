@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>03-weather-app</title>
+</head>
+<body>
+    <div class="bloc">
+        <!--fond principal avec localisation,infos +meteo jour-->
+        <div class="principale">
+
+            <div class="date">
+                <!--Heure-->
+                <div class="time" id="time">
+                </div>
+                <!--Jour-->
+                <div class="jour" id="jour">
+                </div>
+
+                <div class="info" id="current-weather-info">
+                </div>
+            </div>
+            <!--definir la timezone de notre pays -->
+            <div class="place"></div>
+            <div class="timzone" id="timezone"></div>
+            <div id="pays" class="pays"></div>
+        </div>
+    </div>
+    <!--bas de page pour futur jours-->
+    <div class="futur-days">
+        <div class="today" id="current-temp">
+            <img src="" alt="decotemps" class="miniJour">
+            <div class="other">
+                <div class="day"></div>
+                <div class="temp"></div>
+                <div class="temp"></div>
+            </div>
+            
+        </div>
+        <div class="meteo-futur" id="meteo-futur">
+            <div class="meteo-futur-info">
+                <div class="day"></div>
+                <img src="" alt="decotemps" class="miniJour">
+                <div class="temp"></div>
+                <div class="temp"></div>
+            </div>
+            <div class="meteo-futur-info">
+                <div class="day"></div>
+                <img src="" alt="decotemps" class="miniJour">
+                <div class="temp"></div>
+                <div class="temp"></div>
+            </div>
+            <div class="meteo-futur-info">
+                <div class="day"></div>
+                <img src="" alt="decotemps" class="miniJour">
+                <div class="temp"></div>
+                <div class="temp"></div>
+            </div>
+            <div class="meteo-futur-info">
+                <div class="day"></div>
+                <img src="" alt="decotemps" class="miniJour">
+                <div class="temp"></div>
+                <div class="temp"></div>
+            </div>
+            <div class="meteo-futur-info">
+                <div class="day"></div>
+                <img src="" alt="decotemps" class="miniJour">
+                <div class="temp"></div>
+                <div class="temp"></div>
+            </div>
+        </div>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
