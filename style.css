@@ -1,8 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
-.futur-days{
+        .futur-days{
+        justify-content: start;
+        align-items: none;
         overflow-y: scroll;
     }
+
 
 *{
     box-sizing: border-box;
@@ -130,7 +133,7 @@ body{
 
 @media only screen and(max-width:1000px){
     .body{
-        overflow-x:scroll;
+        //overflow-x:scroll;
     }
     .futur-days{
         justify-content: start;
