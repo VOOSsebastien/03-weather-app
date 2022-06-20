@@ -109,16 +109,30 @@ body{
     background: #3c3c44;
     border-radius: 50px;
     text-align: center;
-
 }
 .meteo-futur .meteo-futur-info .temp{
     font-weight: 100;
 }
 /*media query pour permettre le scroll*/
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:730px){
     .futur-days{
         justify-content: start;
         align-items: none;
         overflow-y: scroll;
     }
+    .bloc{
+        padding:20px;
+    }
+}
+
+@media only screen and(max-width:1000px){
+    .body{
+        overflow-x:scroll;
+    }
+    .futur-days{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+    
 }
